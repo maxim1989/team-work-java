@@ -1,11 +1,12 @@
 package com.team_work_java.team_work_java.dto;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public class GetRecommendationsByUserIdDto {
     private UUID user_id;
-    private List<RecommendationDto> recommendations;
+    private List<Optional<RecommendationDto>> recommendations;
 
     public UUID getUser_id() {
         return user_id;
@@ -15,11 +16,11 @@ public class GetRecommendationsByUserIdDto {
         this.user_id = user_id;
     }
 
-    public List<RecommendationDto> getRecommendations() {
+    public List<Optional<RecommendationDto>> getRecommendations() {
         return recommendations;
     }
 
-    public void setRecommendations(List<RecommendationDto> recommendations) {
+    public void setRecommendations(List<Optional<RecommendationDto>> recommendations) {
         this.recommendations = recommendations;
     }
 }
